@@ -10,7 +10,7 @@ function App() {
 
   // Cargar películas al montar el componente
   useEffect(() => {
-    fetch('/api/peliculas')
+    fetch('https://recomendaciones-backend-evzg.onrender.com/api/peliculas')
       .then(res => res.json())
       .then(data => {
         setPeliculas(data);
@@ -35,7 +35,7 @@ function App() {
   // Búsqueda por descripción usando IA (OpenRouter)
   const handleBuscarPorDescripcion = async () => {
     try {
-      const res = await fetch('/api/recomendaciones', {
+      const res = await fetch('https://recomendaciones-backend-evzg.onrender.com/api/recomendaciones', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
