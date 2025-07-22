@@ -9,6 +9,6 @@ services:
     rootDir: backend
     envVars:
       - key: MONGO_URI
-        value: "mongodb+srv://miusuario:ecatepec123456@cineversecluster.248pf8q.mongodb.net/cecyflix?retryWrites=true&w=majority"
+        value: "mongodb+srv://miusuario:zA0y1c70Jd0u89nT@cineversecluster.248pf8q.mongodb.net/cecyflix?retryWrites=true&w=majority"
       - key: OPENROUTER_API_KEY
         value: "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"
